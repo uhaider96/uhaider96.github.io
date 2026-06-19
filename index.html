@@ -1,172 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Usman Haider - Full Stack Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usman Haider | Full Stack Developer</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0b1220;
+  color:#fff;
+}
 
-    body {
-      background: #0f172a;
-      color: #fff;
-      line-height: 1.6;
-    }
+/* NAV */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  background:#111827;
+  position:sticky;
+  top:0;
+}
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: #111827;
-    }
+nav a{
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
 
-    header h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+nav a:hover{
+  color:#38bdf8;
+}
 
-    header p {
-      color: #94a3b8;
-    }
+/* HERO */
+.hero{
+  text-align:center;
+  padding:80px 20px;
+  animation:fadeIn 1s ease-in;
+}
 
-    nav {
-      background: #1f2937;
-      text-align: center;
-      padding: 10px;
-    }
+.hero h1{
+  font-size:50px;
+  margin-bottom:10px;
+}
 
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
+.hero p{
+  color:#94a3b8;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+/* SECTION */
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:50px 20px;
+}
 
-    h2 {
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
+h2{
+  color:#38bdf8;
+  margin-bottom:20px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
+/* CARDS */
+.card{
+  background:#111827;
+  padding:20px;
+  margin:15px 0;
+  border-radius:10px;
+  transition:0.3s;
+}
 
-    .skills span {
-      display: inline-block;
-      background: #334155;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 5px;
-    }
+.card:hover{
+  transform:translateY(-5px);
+  background:#1f2937;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111827;
-      margin-top: 20px;
-    }
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  background:#1f2937;
+  padding:8px 12px;
+  margin:5px;
+  border-radius:5px;
+}
 
-    a {
-      color: #38bdf8;
-    }
-  </style>
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:10px 15px;
+  background:#38bdf8;
+  color:#000;
+  text-decoration:none;
+  border-radius:5px;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+  margin-top:40px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+
 </head>
-
 <body>
-
-<!-- HOME / INTRO -->
-<header id="home">
-  <h1>Usman Haider</h1>
-  <p>Full Stack Developer (PHP | Laravel | Node.js | React)</p>
-</header>
 
 <!-- NAV -->
 <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+<h1>Usman Haider</h1>
+<p>Full Stack Developer | PHP | Laravel | Node.js | React | WordPress</p>
+</div>
 
 <!-- ABOUT -->
 <section id="about">
-  <h2>👨‍💻 About Me</h2>
-
-  <div class="card">
-    <p><b>Education:</b> BS Computer Science (BSCS)</p>
-    <p><b>Experience:</b> Web Development (Frontend + Backend + WordPress)</p>
-  </div>
+<h2>👨‍💻 About Me</h2>
+<div class="card">
+<p><b>Education:</b> BS Computer Science (BSCS)</p>
+<p><b>Experience:</b> Web Development (Frontend + Backend + WordPress)</p>
+</div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>PHP</span>
-    <span>Laravel</span>
-    <span>Node.js</span>
-    <span>React</span>
-    <span>MySQL</span>
-    <span>WordPress</span>
-  </div>
+<h2>Skills</h2>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>PHP</span>
+<span>Laravel</span>
+<span>Node.js</span>
+<span>React</span>
+<span>MySQL</span>
+<span>WordPress</span>
+</div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <h2>💼 Projects</h2>
+<h2>💼 Projects</h2>
 
-  <div class="card">
-    <h3>Node.js CRUD App</h3>
-    <p>Full stack CRUD application with MySQL database.</p>
-  </div>
+<div class="card">
+<h3>Node.js CRUD App</h3>
+<p>Full stack CRUD system with MySQL database.</p>
+<a class="btn" href="https://github.com/yourrepo" target="_blank">GitHub</a>
+</div>
 
-  <div class="card">
-    <h3>Laravel Project</h3>
-    <p>Authentication system with admin panel and database integration.</p>
-  </div>
+<div class="card">
+<h3>Laravel Project</h3>
+<p>Authentication system with admin panel.</p>
+<a class="btn" href="https://github.com/yourrepo" target="_blank">GitHub</a>
+</div>
 
-  <div class="card">
-    <h3>WordPress Website</h3>
-    <p>Business website built with Elementor and custom design.</p>
-  </div>
+<div class="card">
+<h3>WordPress Website</h3>
+<p>Business website built with Elementor.</p>
+<a class="btn" href="#">Live Demo</a>
+</div>
 
-  <div class="card">
-    <h3>React App</h3>
-    <p>Dynamic frontend application using React components and APIs.</p>
-  </div>
+<div class="card">
+<h3>React App</h3>
+<p>Dynamic UI with API integration.</p>
+<a class="btn" href="#">Live Demo</a>
+</div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <h2>📞 Contact</h2>
+<h2>📞 Contact</h2>
 
-  <div class="card">
-    <p><b>Email:</b> uhaider89@gmail.com</p>
-    <p><b>WhatsApp:</b> +923085471426</p>
-    <p><b>LinkedIn:</b> <a href="#">https://linkedin.com/in/uhaider96</a></p>
-  </div>
+<div class="card">
+<p><b>Email:</b> your.email@gmail.com</p>
+<p><b>WhatsApp:</b> +92XXXXXXXXXX</p>
+<p><b>LinkedIn:</b> linkedin.com/in/yourprofile</p>
+</div>
+
 </section>
 
 <footer>
-  <p>© 2026 Usman Haider | All Rights Reserved</p>
+<p>© 2026 Usman Haider | All Rights Reserved</p>
 </footer>
 
 </body>
